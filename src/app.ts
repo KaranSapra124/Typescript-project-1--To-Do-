@@ -45,8 +45,8 @@ function displayTasks(item: Task[]) {
   item?.length > 0
     ? item?.map((elem: Task, index: number) => {
         if (taskDiv) {
-          return (taskDiv.innerHTML += `<div class="flex py-1 h-fit mx-2 my-2 rounded-l-full rounded-r-full px-4 items-center  gap-4 text-white bg-gray-800 w-96 justify-between "><div><h1 class=${
-            elem?.isCompleted ? "line-through" : "text-xl font-semibold"
+          return (taskDiv.innerHTML += `<div class="flex py-1 h-fit max-[600px]:w-80 max-[600px]:mx-auto mx-2  my-2 rounded-l-full rounded-r-full px-4 items-center  gap-4 text-white bg-gray-800 w-96 justify-between "><div><h1 class=${
+            elem?.isCompleted ? "line-through" : "text-xl max-[600px]:text-sm font-semibold"
           }>${elem.title} </h1></div>
     <div class="flex items-center"> <input  ${
       elem?.isCompleted ? "checked" : ""
@@ -55,7 +55,7 @@ function displayTasks(item: Task[]) {
       <button class="bg-gray-500/70 font-semibold mx-2 text-white rounded-lg p-1 my-1" onclick="deleteTask(${index})">Delete</button></div></div>`); // Using += to append to existing content
         }
       })
-    : (taskDiv.innerHTML = `<h1 class="text-center text-2xl text-center mx-auto text-white font-extrabold">No Data Present</h1>`);
+    : (taskDiv.innerHTML = `<h1 class="text-center text-2xl text-center mx-auto max-[600px]:text-lg text-white font-extrabold">No Data Present</h1>`);
 }
 
 // IsCompleted

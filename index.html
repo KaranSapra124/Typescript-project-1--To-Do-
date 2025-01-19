@@ -11,21 +11,21 @@
     <div
       class="flex  bg-gradient-to-tr from-black/50 to-black h-screen flex-col justify-center items-center"
     >
-      <h1 class="text-3xl text-white font-extrabold my-2">No Compromise!</h1>
+      <h1 class="text-3xl max-[600px]:text-lg text-white font-extrabold my-2">No Compromise!</h1>
       <!-- <form id="task-form"> -->
       <div>
         <input
         autofocus
-          class="w-96 border border-white text-center text-black font-semibold bg-gradient-to-tr from-gray-200 to-black/40 p-2 rounded-l-full"
+          class="w-96 max-[600px]:w-52 max-[600px]:text-sm border border-white text-center text-black font-semibold bg-gradient-to-tr from-gray-200 to-black/40 p-2 rounded-l-full"
           type="text"
           id="task-input"
           placeholder="Add a new task"
           required
         />
-        <button id="btn" class="shadow-md p-2 bg-gradient-to-tr from-gray-400/80 text-black to-black/90 text-white font-extrabold  -ml-1 rounded" type="submit">Add Task</button>
+        <button id="btn" class="shadow-md p-2 max-[600px]:text-sm bg-gradient-to-tr from-gray-400/80 text-black to-black/90 text-white font-extrabold  -ml-1 rounded" type="submit">Add Task</button>
       </div>
-      <div id="date_time" class="font-bold my-2 text-lg text-white/80 brightness-200 "></div>
-      <div id="TaskDiv"  class="h-96 w-full flex flex-wrap"></div>
+      <div id="date_time" class="font-bold max-[600px]:text-sm max-[600px]:font-extrabold  my-2 text-lg text-white/80 brightness-200 "></div>
+      <div id="TaskDiv"  class="h-96 max-[600px]:h-full max-[600px]:flex-col justify-between  w-full flex flex-wrap"></div>
       <!-- </form> -->
       <ul id="task-list"></ul>
     </div>
